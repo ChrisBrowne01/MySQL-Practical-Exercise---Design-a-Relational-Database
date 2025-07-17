@@ -2,11 +2,11 @@
 
 -- - Add a column to the Employees table to store phone numbers.
 ALTER TABLE Employees
-ADD COLUMN PhoneNumber VARCHAR(15); -- Phone numbers can be stored in differnt formats and dialing codes.
+ADD PhoneNumber VARCHAR(15); -- Phone numbers can be stored in differnt formats and dialing codes.
 
 -- - Make sure that every department has a name by including a NOT NULL constraint on the DepartmentName column.
 UPDATE Departments 
-SET DepartmentName = '' WHERE DepartmentName IS NULL
+SET DepartmentName = '' WHERE DepartmentName IS NULL;
 ALTER TABLE Departments 
 MODIFY COLUMN DepartmentName VARCHAR(100) NOT NULL;
 
