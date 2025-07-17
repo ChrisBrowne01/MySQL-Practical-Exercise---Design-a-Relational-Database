@@ -6,7 +6,7 @@ CREATE TABLE TaskAssignments (
 		EmployeeID INT NOT NULL,
 		ProjectID INT NOT NULL,
 		AssignmentDate DATE,
-		FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID),employees
+		FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID),
 		FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID)				
 );
 
